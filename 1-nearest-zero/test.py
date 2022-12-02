@@ -2,7 +2,7 @@ import main
 import unittest
 
 
-class NearestZerotest(unittest.TestCase):
+class NearestZeroTest(unittest.TestCase):
     def test1(self):
         array = "0 1 4 9 0"
         result = main.nearest_zero(
