@@ -12,13 +12,13 @@ class SleightOfHandTest(unittest.TestCase):
 
     def test2(self):
         k = 4
-        field = "1111999911119911"
+        field = "1111/n9999/n1111/n9911"
         result = main.sleight_of_hand(k, field)
         self.assertEqual(result, 1)
 
     def test3(self):
         k = 4
-        field = "1111111111111111"
+        field = "1111/n1111/n1111/n1111"
         result = main.sleight_of_hand(k, field)
         self.assertEqual(result, 0)
 
