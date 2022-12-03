@@ -3,6 +3,7 @@ import unittest
 
 
 class NearestZeroTest(unittest.TestCase):
+    """Simple testcases. You can add your testcases below."""
     def test1(self):
         array = "0 1 4 9 0"
         result = main.nearest_zero(
