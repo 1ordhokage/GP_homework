@@ -76,8 +76,7 @@ def psp(n: int) -> str:
 
 
 def main():
-    n = int(input("Enter 'n': "))
-    print(psp(n))
+    print(psp(int(input())))
 
 
 if __name__ == "__main__":
