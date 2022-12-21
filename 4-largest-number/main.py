@@ -4,7 +4,6 @@ def largest_number(n: int, numbers: str) -> str:
         for j in range(i + 1, n):
             if number_lst[j] + number_lst[i] > number_lst[i] + number_lst[j]:
                 number_lst[i], number_lst[j] = number_lst[j], number_lst[i]
-    print(number_lst)
     return "0" if number_lst == ['0'] * n else "".join(number_lst)
 
 
