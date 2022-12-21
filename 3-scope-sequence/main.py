@@ -12,8 +12,8 @@ def find_opening_brace(sequence: list[str]) -> tuple[int, int]:
     weight = 0
     index = len(sequence) - 1
     for i in range(index, -1, -1):
-        weight += -1 if sequence[i] == ')' else 1
-        if sequence[i] == '(' and weight < 0:
+        weight += -1 if sequence[i] == ")" else 1
+        if sequence[i] == "(" and weight < 0:
             index = i
             break
     return index, weight
@@ -36,7 +36,7 @@ def lexicographically_minimal(
      """
     for i in range(index + 1, 2 * n):
         opening_brace_condition = i <= (2 * n + index + weight) / 2
-        sequence[i] = '(' if opening_brace_condition else ')'
+        sequence[i] = "(" if opening_brace_condition else ")"
     return sequence
 
 
@@ -51,7 +51,7 @@ def get_next_sequence(sequence: list[str], n: int) -> list[str]:
     opening_brace_index, opening_brace_weight = find_opening_brace(
         sequence
     )
-    sequence[opening_brace_index] = ')'
+    sequence[opening_brace_index] = ")"
     return lexicographically_minimal(
         sequence,
         n,
