@@ -1,4 +1,11 @@
 def largest_number(n: int, numbers: str) -> str:
+    """Function that generates max number from given numbers (comparison sort).
+        Args:
+            n: Number of numbers.
+            numbers: Numbers.
+        Returns:
+            str: Max number from given numbers.
+    """
     number_lst = numbers.split()
     for i in range(n):
         for j in range(i + 1, n):
