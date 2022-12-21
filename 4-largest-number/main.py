@@ -1,7 +1,7 @@
 def largest_number(n: int, numbers: str) -> str:
     """Function that generates max number from given numbers (comparison sort).
         Args:
-            n: Number of numbers.
+            n: Integer number of numbers from 1 to 100.
             numbers: Numbers.
         Returns:
             str: Max number from given numbers.
